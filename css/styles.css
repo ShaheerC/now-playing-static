@@ -195,3 +195,51 @@ figure {
 .about > p {
   margin: 0;
 }
+
+@media (min-width: 768px) {
+  .site-nav-list{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;  
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 200;
+    left: 0;
+    background-color: rgba ( 0, 0, 0, 0);
+    grid-gap: 0.5em;
+    z-index: 0;
+  }
+
+  .site-nav-item{
+    padding: 100px 0px 0px 25px;
+  }
+
+  main{
+    width: 95%;
+    margin: 0 0 0 100px;
+  }
+
+  .site-logo-image{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 2em;
+    z-index: 200;
+  }
+
+  .movie-details{
+    padding: 0px 40px 0px 85px;
+  }
+
+  .movie-overview{
+    display: block;
+  }
+
+  .site-footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 100%;
+  }
+
+
+}
