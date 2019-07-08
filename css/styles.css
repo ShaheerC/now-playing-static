@@ -196,6 +196,8 @@ figure {
   margin: 0;
 }
 
+/* MEDIA QUERY FOR 768PX OR TABLET */
+
 @media (min-width: 768px) {
   .site-nav-list{
     display: grid;
@@ -225,6 +227,7 @@ figure {
     left: 0px;
     width: 2em;
     z-index: 200;
+    padding: 5px 0px 0px 20px;
   }
 
   .movie-details{
@@ -239,7 +242,49 @@ figure {
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 100%;
+    background-color: #333333;
+    color: white;
+    margin: 0 0 0 100px;
+  }
+}
+
+/* MEDIA QUERY FOR 992PX OR DESKTOP */
+
+@media (min-width: 992px) {
+  main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .movie:first-child{
+    grid-column: 1 / 4;
+    padding: 0;
+    margin: 0;
   }
 
+  .movie:first-child .movie-overview{
+    display: block;
+    margin: 0px 0px 25px 0px;
+  }
 
+  .movie-overview{
+    display: none;
+  }
+
+  .movie .movie-backdrop{
+    display: none;
+  }
+  
+  .movie .movie-poster{
+    display: inline-block;
+  }
+
+  .movie:first-child .movie-backdrop{
+    display: inline-block;
+    width: 100%;
+  }
+
+  .movie:first-child .movie-poster{
+    display: none;
+  }
 }
